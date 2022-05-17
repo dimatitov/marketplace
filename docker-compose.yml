@@ -1,0 +1,51 @@
+version: "3.9"
+volumes:
+  build:
+  dist:
+  postgres:
+services:
+  db:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-DisruptionX}
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5430:5432"
+    restart: unless-stopped
+  nginx:
+    volumes:
+      - ./docker/nginx/logs/:/etc/nginx/logs/
+      - build:/srv/build:ro
+      - dist:/srv/dist:ro
+    ports:
+      - "7005:7005"
+    build: ./docker/nginx/
+    depends_on:
+      - front
+      - backend
+  front:
+    build: ./
+    volumes:
+      - ./:/usr/src/app
+      - build:/usr/src/app/build
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "7000:7000"
+  backend:
+    build: ../disruptionBackend/
+    volumes:
+      - ../disruptionBackend/:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/dist
+    environment:
+      - NODE_ENV=development
+      - PORT=7001
+    ports:
+      - "7001:7001"

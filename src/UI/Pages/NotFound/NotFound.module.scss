@@ -1,0 +1,32 @@
+.wrapper {
+  padding-top: 304px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 490px;
+  width: 100%;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 57px;
+  text-align: center;
+  color: var(--white);
+  margin-top: 16px;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: var(--white);
+  margin-bottom: 44px;
+}
+
+.button {
+  padding: 13px 44px;
+}

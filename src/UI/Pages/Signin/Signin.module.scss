@@ -1,0 +1,60 @@
+.paddingWrapper {
+  padding: 142px 234px 218px 234px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.icon {
+  margin-bottom: 35px;
+}
+
+.rightIconButton {
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.signInButton {
+  padding: 4px 74px;
+  margin-bottom: 14px;
+}
+
+.input {
+  padding: 4px 0 4px 10px;
+}
+
+.loginInput {
+  margin-bottom: 15px;
+}
+
+.passwordInput {
+  margin-bottom: 40px;
+}
+
+.labelError {
+  color: rgba(var(--inputWarningOrangeRgb), 0.6);
+}
+
+.inputPassword {
+  border: 1px solid var(--blue);
+  background-color: rgba(var(--black), 0.1);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  padding: 4px 0 4px 10px;
+  margin-bottom: 20px;
+}
+
+.errorMessage {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: rgba(var(--inputWarningOrangeRgb), 0.6);
+  position: absolute;
+  bottom: 90px;
+}

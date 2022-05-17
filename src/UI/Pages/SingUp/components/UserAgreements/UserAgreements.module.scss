@@ -1,0 +1,17 @@
+.linkWrapper {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  color: var(--white);
+  text-align: center;
+  white-space: nowrap;
+
+  .route {
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--white);
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}

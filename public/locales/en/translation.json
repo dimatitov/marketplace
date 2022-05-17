@@ -1,0 +1,60 @@
+{
+  "hello": "Hello",
+  "logout": "Logout",
+  "user": "User",
+  "urlSoon": "You on {{uri}} (soon)",
+  "signUpText": "Sign Up",
+  "signUp": {
+    "accountName":{
+      "placeholder":"Account name"
+    },
+    "email":{
+      "placeholder":"Email"
+    },
+    "password":{
+      "error":{
+        "greater":"The password should be greater than {{gt}} and smaller than {{sm}}",
+        "mustContainNumeric":"Must contain at least {{count}} characters, numeric character (0-9)"
+      },
+      "placeholder":"Password"
+    }
+  },
+  "signInText": "Sign In",
+  "signIn": {
+    "login":{
+      "label":"Your account name",
+      "placeholder":"Login"
+    },
+    "password":{
+      "label":"Password",
+      "placeholder":"Password"
+    }
+  },
+  "alreadyMember": "Already a member",
+  "forgotYourPass": "Forgot your",
+  "menu": {
+    "home": "Home",
+    "games": "Games",
+    "marketplace": "Marketplace",
+    "guilds": "Guilds",
+    "profile": "Profile"
+  },
+  "and": "and",
+  "userAgreement": {
+    "agree":"By creating an account, you agree to DX",
+    "terms": "Terms of Use",
+    "policy":"Privacy Policy"
+  },
+  "pageTitles": {
+    "signIn": "Sign in",
+    "singUp": "Sign up",
+    "home": "Home",
+    "admin": "Admin",
+    "games": "Games",
+    "store": "Store",
+    "guild": "Guild",
+    "profile": "Profile",
+    "your profile": "Your profile",
+    "notFound": "Not found"
+  }
+}

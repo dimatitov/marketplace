@@ -1,0 +1,57 @@
+.paddingWrapper {
+  padding: 145px 234px 7px 234px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.icon {
+  margin-bottom: 35px;
+}
+
+.input {
+  padding: 4px 0 4px 10px;
+}
+
+.singUpInput {
+  margin-bottom: 29px;
+}
+
+.lastSingUpInput {
+  margin-bottom: 2px;
+}
+
+.signUpButton {
+  padding: 4px 74px;
+  margin-bottom: 14px;
+}
+
+.linkSignIn {
+  margin-bottom: 90px;
+}
+
+.rightIconButton {
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.passwordFieldHint {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 19px;
+  margin-bottom: 30px;
+  align-self: baseline;
+}
+
+.passwordFieldHintDefault {
+  color: rgba(var(--whiteRgb), 0.5);
+}
+
+.passwordFieldHintError {
+  color: rgba(var(--inputWarningOrangeRgb), 0.5);
+}
